@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    container_name: langgraph-backend
+    command: uvicorn code.app:app --host 0.0.0.0 --port 8000
+    env_file: .env
+    ports:
+      - "${BACKEND_PORT}:8000" 
+    volumes:
+      - .:/app
+    restart: unless-stopped
+
+  frontend:
+    build: .
+    container_name: langgraph-frontend
+    command: chainlit run code/app_frontend.py --host 0.0.0.0 --port 8501
+    env_file: .env
+    environment:
+      - BACKEND_BASE=http://backend:8000  
+    ports:
+      - "${FRONTEND_PORT}:8501"
+    depends_on:
+      - backend
+    volumes:
+      - .:/app
+      - hf_cache:/root/.cache/huggingface
+    restart: unless-stopped
+
+volumes:
+  hf_cache:
+
+networks:
+  langgraph_net:
+    driver: bridge

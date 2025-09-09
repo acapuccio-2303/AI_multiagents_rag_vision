@@ -1,0 +1,70 @@
+# ignora immagini e docu
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.webp
+*.pdf
+*.doc
+*.docx
+
+
+
+
+!vision_example.jpg
+!rag_example.jpg
+
+
+agent_env*/
+logs*/
+history*/
+vectorstore*/
+
+# ignora file di configurazione locale
+.env
+*.env
+
+# ❌ Ambienti virtuali
+.venv/
+venv/
+env/
+
+# ❌ File temporanei di Python
+__pycache__/
+*.pyc
+*.pyo
+
+# ❌ Config e dati temporanei
+*.log
+*.sqlite
+*.db
+*.bak
+
+# ❌ Notebook junk
+.ipynb_checkpoints/
+
+# ❌ File di sistema
+.DS_Store
+Thumbs.db
+
+# ❌ Pacchetti compressi
+*.tar
+*.gz
+*.zip
+
+# ❌ File dell’editor
+*.swp
+*~
+.vscode/
+.idea/
+
+
+# File di grandi dimensioni comuni
+*.gguf
+*.Identifier
+
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z

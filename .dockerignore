@@ -1,0 +1,34 @@
+# === File sensibili ===
+.env
+*.key
+*.pem
+
+# === Cache e compilati ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# === Virtualenv ===
+venv/
+env/
+.venv/
+agent_env_python312/
+
+# === Contenuti locali non necessari nel container ===
+uploads/
+vectorstores/
+memorie_utenti/
+logs/
+
+# === Config di sistema / IDE ===
+*.log
+*.tmp
+*.swp
+*.bak
+.DS_Store
+.vscode/
+.idea/
+*.iml
