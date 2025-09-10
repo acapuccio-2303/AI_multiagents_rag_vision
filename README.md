@@ -1,6 +1,15 @@
 # Multimodal Conversational System — RAG + Vision
 
-**Multimodal FastAPI backend**: intelligent routing between a Vision agent (images) and a RAG agent (documents), orchestrated with **LangGraph** and **LangChain**, featuring persistent session memory and automatic S3 synchronization. Ideal for Q&A on documents and images, supporting multiple user sessions with structured logging and context-aware responses.
+A smart multimodal assistant that combines image understanding and document Q&A. Queries are dynamically routed between a Vision Agent and a RAG Agent using LangGraph and LangChain, with persistent session memory and automatic S3 sync.
+
+Features:
+- Context-aware responses across sessions
+
+- Structured logging for easy monitoring
+
+- Seamless handling of both documents and images
+
+Your all-in-one solution for intelligent, multimodal interactions.
 
 **Demo Video**:     [Watch the demo (.webm)](./demo_vision_rag.webm)  
 **Vision example**: [VLM Example](./vision_example.jpg) 
@@ -39,15 +48,12 @@ Create a .env file in the project root with the following content:
 
 - 📄 **Document Retrieval (RAG)**
   - Supports formats: PDF, TXT, DOCX, CSV
-  - Chunking using `RecursiveCharacterTextSplitter`
-  - “Source” metadata associated with each chunk
   - **FAISS** vectorstore updated with every upload
-  - Intelligent routing to the technical agent only when needed
+  - Intelligent routing to the Rag agent only when needed
 
 - 🖼️ **Vision & Image Q&A**
   - Supports image formats: PNG, JPG, JPEG, BMP, WEBP
   - Calls **Gemini VLM** for image-based questions
-  - Handles the latest uploaded image for queries
   - Automatic routing to the Vision agent when an image is detected
 
 - 💾 **Persistent Conversational Memory**
