@@ -1,6 +1,6 @@
-# Multimodal Conversational System — RAG + Vision
+# Next-Gen Multimodal Agents — RAG & Vision
 
-A smart multimodal assistant that combines image understanding and document Q&A. Queries are dynamically routed between a Vision Agent and a RAG Agent using LangGraph and LangChain, with persistent session memory and automatic S3 sync.
+A smart multimodal assistant that combines **image understanding** and **document Q&A**. Queries are dynamically routed between a Vision Agent and a RAG Agent using **LangGraph** and **LangChain**, with persistent session memory and automatic S3 sync.
 
 Features:
 - Context-aware responses across sessions
