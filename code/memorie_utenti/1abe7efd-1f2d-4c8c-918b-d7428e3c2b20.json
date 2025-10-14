@@ -1,0 +1,18 @@
+[
+  [
+    "human",
+    "ciao"
+  ],
+  [
+    "ai",
+    "Ciao! Come posso aiutarti oggi?"
+  ],
+  [
+    "human",
+    "Riassumi"
+  ],
+  [
+    "ai",
+    "Certo, posso riassumere qualsiasi cosa! Ma per farlo, ho bisogno che tu mi fornisca il testo, l'articolo, il documento o le informazioni che vuoi che io riassuma.\n\n**Cosa vorresti che riassumessi per te?**\n\nPuoi incollare il testo qui, fornirmi un link, o descrivermi brevemente l'argomento."
+  ]
+]

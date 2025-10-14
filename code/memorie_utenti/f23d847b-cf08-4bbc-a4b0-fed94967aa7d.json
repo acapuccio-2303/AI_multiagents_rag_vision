@@ -1,0 +1,22 @@
+[
+  [
+    "human",
+    "ciao"
+  ],
+  [
+    "ai",
+    "Ciao! Come stai? (Hello! How are you?)"
+  ],
+  [
+    "human",
+    "che vedi"
+  ],
+  [
+    "human",
+    "riassumi"
+  ],
+  [
+    "ai",
+    "Certo! Per poterti aiutare, ho bisogno che tu mi fornisca il testo che desideri riassumere.\n\nPuoi:\n*   Incollarlo qui.\n*   Descrivere brevemente l'argomento (se non hai il testo completo).\n*   Darmi un link a un articolo o una pagina web.\n\nUna volta che avrò il contenuto, sarò felice di fartene un riassunto!"
+  ]
+]

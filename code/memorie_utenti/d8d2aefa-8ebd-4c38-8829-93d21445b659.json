@@ -1,0 +1,18 @@
+[
+  [
+    "human",
+    "Riassumi"
+  ],
+  [
+    "ai",
+    "Certo! Per riassumere qualcosa, ho bisogno che tu mi fornisca il testo o l'argomento.\n\nIncollami qui il testo che desideri che riassuma, oppure dimmi l'argomento e cercherò di darti un riassunto generale se ho informazioni a riguardo!"
+  ],
+  [
+    "human",
+    "."
+  ],
+  [
+    "ai",
+    "You sent a single period. Is there something specific you'd like to ask or discuss?"
+  ]
+]

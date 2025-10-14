@@ -1,0 +1,18 @@
+[
+  [
+    "human",
+    "Riassumi"
+  ],
+  [
+    "ai",
+    "Certo! Per poterti aiutare, ho bisogno che tu mi fornisca il contenuto da riassumere.\n\nPuoi darmi:\n*   Un testo\n*   Un articolo\n*   Una storia\n*   Un concetto\n*   Un documento\n*   Una conversazione\n*   Qualcos'altro\n\nUna volta che mi darai il materiale, sarò felice di farne un riassunto per te!"
+  ],
+  [
+    "human",
+    "."
+  ],
+  [
+    "ai",
+    "That's a period, also known as a dot.\n\nIs there something specific you'd like to know or discuss about it, or did you mean something else?"
+  ]
+]

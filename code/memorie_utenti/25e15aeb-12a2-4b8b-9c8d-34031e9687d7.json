@@ -1,0 +1,10 @@
+[
+  [
+    "human",
+    "."
+  ],
+  [
+    "ai",
+    "You've sent a period (.).\n\nWhat would you like to know or do with it? Are you:\n*   Asking about its use as a **punctuation mark** (e.g., at the end of a sentence, in abbreviations)?\n*   Looking for its **symbolic meaning** (e.g., a full stop, a conclusion)?\n*   Did you mean to type something else and this was an **incomplete input**?\n\nPlease let me know!"
+  ]
+]

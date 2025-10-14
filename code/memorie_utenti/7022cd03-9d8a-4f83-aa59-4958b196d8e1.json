@@ -1,0 +1,50 @@
+[
+  [
+    "human",
+    "ciao"
+  ],
+  [
+    "ai",
+    "Ciao! Come posso aiutarti oggi?"
+  ],
+  [
+    "human",
+    "Descrivi brevemente"
+  ],
+  [
+    "ai",
+    "L'immagine mostra un corridoio o un'area comune di un ufficio moderno e luminoso. Le pare pareti sono bianche e il pavimento è di un grigio chiaro, mentre le porte sono di un giallo acceso, alcune con oblò rotondi.\n\nNel centro della scena, si trovano due tavoli alti rotondi in metallo lucido, posizionati ai lati del passaggio. Numerose piante verdi sono sparse lungo il corridoio, aggiungendo un tocco di natura.\n\nSulla sinistra, oltre alle porte gialle, si intravedono dei distributori d'acqua. Sulla destra, il corridoio è attrezzato con due grandi fotocopiatrici/stampanti multifunzione e alcuni estintori, oltre a una bacheca appesa al muro. In fondo al corridoio, si possono vedere le porte di un ascensore."
+  ],
+  [
+    "human",
+    "vedi  una bacheca?"
+  ],
+  [
+    "ai",
+    "Sì, c'è una bacheca sulla parete bianca a destra, sopra la fotocopiatrice."
+  ],
+  [
+    "human",
+    "riassumi"
+  ],
+  [
+    "ai",
+    "L'immagine mostra un corridoio o un'area comune di un ufficio moderno e luminoso. Le pareti sono bianche e il pavimento è di colore grigio chiaro.\n\nLe caratteristiche principali includono:\n*   **Porte Gialle:** Diverse porte di un giallo acceso si aprono dal corridoio su entrambi i lati, alcune con oblò o finestre.\n*   **Ascensori:** Al centro, sul fondo, si vedono due porte di ascensore argentate.\n*   **Tavoli Alti:** Tre tavoli alti e rotondi in metallo sono distribuiti nell'area, suggerendo spazi per pause veloci o conversazioni in piedi.\n*   **Piante:** Diverse piante verdi in vaso sono disposte sul pavimento, aggiungendo un tocco di natura all'ambiente.\n*   **Attrezzature Ufficio:** Sul lato destro, vicino a una delle porte gialle, si notano diverse macchine da ufficio (probabilmente fotocopiatrici o stampanti) e alcuni estintori rossi.\n\nL'ambiente appare pulito, funzionale e ben illuminato, tipico di uno spazio lavorativo contemporaneo."
+  ],
+  [
+    "human",
+    "cosa c'è scritto?"
+  ],
+  [
+    "ai",
+    "C'è scritto principalmente una frase nella parte inferiore dell'immagine:\n\n**L. BARBERI BORGO SAN GIORGIO**\n\nCi sono anche dei piccoli cartelli sulle porte (ad esempio, uno blu sulla porta a destra sembra indicare i bagni) e dei documenti sulle tavole e sulle pareti, ma il testo su di essi non è leggibile a causa della bassa risoluzione."
+  ],
+  [
+    "human",
+    "."
+  ],
+  [
+    "ai",
+    "```json\n[\n  {\"box_2d\": [599, 0, 999, 237], \"mask\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAAAAAB5Gfe6AAACaklEQVR42u3dQU4DMRBE0br/pYsFEYsoQihM7Pb8Xxu21MPTUog9TsyMFF3+EXJ3pkFf5PZtX7YmAPTPofe/pUDtjyZowQJ9p/+NBPp24PVvAdD/BV7/dIFeEQHI5Y8U6OVhtz9EoJ8Nu/1sga4JvX/p/YcKdG3g9R//TCa3n7QMujPw+vsFuj/0/jsNOibw+nsAWrJAp4Xev/D6SwE6M64A+5OfAAcAu/46ATqA/QVwAgjgE4AFqABsgBYugAdwBgjgEIALFC7Qk4IHeNb4+YkEuG5xnN73+4QucBE8/+b4p6B4gAoA7y9ABRBAAQHYAKX3V+AdgdIFShcoXUAAAdgALVxAAAEUYAsUDlAB4AICwAUKB2jrEmATlA3QogF6+8Dr/wrQCkAWKCZ4gNL7l97/hUArAFqgZQsUDtC6AtgGLVygcIHCASqAAGwBAQSACwhAFxCALiCAAM4AV4AAAgjgEBTAj8MCEOtzAfxm0K+GsQBuDkEDxO1BbhDzERCAC4DfI+smcY8JcAHY52Q8KMYG8KQkG4B+Vtaz0p6WFsAh6BB0CAoggAC+M0cAAQTwvWECCEACiAAC+AJRAQQQwJco+xptAQQQQAABvE5DAAG8UUgArxUTgAAQAQTwdlFXgCtAAAGQAKFfsy5ABEADRAA2QARgA0QANkAEQAMkAqABIgAbIHCAwAECBwgcIHCAwAECBwgbIEEDJGSAXBR6/9MAcmX34wDyiaDLC3AIQD6ZudMuawL8m48HyNKgy48DSNAACRogYQOEDJCdQZffDZAJAVffBpBRYbcXYDlAqAAZWX4JQOYHXD35AsDyxGSz8sm6AAAAAElFTkSuQmCC\", \"label\": \"plant\"},\n  {\"box_2d\": [363, 208, 655, 332], \"mask\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAAAAAB5Gfe6AAADVUlEQVR42u3dQW4bMRQDUN7/0uyqrRukgCeWvkiRzDaYiA+yPY4lGdgVvgZp4bcJr58DwXcSXf5eB/4k6f1vMuAHSe/P9P7+BFyReABnAjKbgAsTXt9SgCxBOED6FCCzBchwAYYLkNkCZLYAdya9vwNBOgCjATiS8PqyAhxMPADD61dAEIDhU4DMFuCZpPfXIeDJhNcvQAXQx0D6Q+C4AdMFKBEwHODcRKBU4gHmCViAcAIynIAMJyDDCZguQOXEAwwopPc3ANhrQJPEA2wjYLoA0wXolfT+qw1omXgAFqAC4f0rUAAWoI+BAvSFsADqAltHMCKgvFxhxx/EyUUaj2cEchIP8BUBTdM0TdM0TdM0TdM0TdM0TdM0TdM0TdM0TdM0TdM0TXN1XtZ4R/ePXDycvXQ8e/9A7CaK7A0kyTtoZM6bku5+I4DciWPi7e8RED51Trv8BQDSZ+7pl7cU4O8fhgEYnroo29gCwP/QSfneagLXHTrpUv64wJ1nbjqVPwVw7QlDhu3nAazOmOL97b8I/Od9xt39//bj7s9QxAHe+U1+W+gKgIHnUV4L8KbB1QCMB6A5wMAdFdMBcHl/Wr8Mzryr0AVgAUYEbn8IuAKgANkACAdYOTbn/wiGAiwemBvA8oEVwApgw8AKYPyRYAGGAFQIEA6wa1gmAPuGVQBfgDmBAmj2DwJAAc6uwBftHwOAcIDtAzNeGp0wBRAOgHCAoZHZzoC5fwrI9r94mcTkSkbBGTC8mldqW9zjdc43AZxa0K3Q/+iKdgGAw2v6vQHgPwWOb+s4CqCwseUkALIBVPY2nQKQ2d53BkBof+MRAKkdngcEtPa4zgOo7XEeBtDb5T0LoLjN3R8ALgCiRx1MAQCiAJwBACwFGCFwwQyQBwAK4Clg03/XwRo29ZUBAHmBsx8/Sc8Bp/6KD4LZb4nReyXEcNTeDwA+AjuuChgJbLgq4CSw/qK4CAA+/SFyH4BzkXgSBG4SMOuP83dCOJ3DMwC3ATy8IOApsOZ6sP0WgEWXA1wBVtwKQSdHAKCUH3zBz6cAEMv00wD0MjoDAHuBj64F+At8cimEAwDJApDOypt4x/5L72IN2z8ieH4puIRcdifrWP/fkad/w/3ru4U/MGh88gvRyR7QpijmlwAAAABJRU5ErkJggg==\", \"label\": \"plant\"},\n  {\"box_2d\": [108, 615, 355, 715], \"mask\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAAAAAB5Gfe6AAACmklEQVR42u3dwXLiMBAG4Xn/l+6tZMMlld0CYoyl7v/CEebzyGBbEjOlnBG0ZfMVDwF3x17/pgg8nF1GO89Hedy3UuCYiEtflYDjIy9/JQReGT3AAgZgFvh7cXNKrnkNxbmRl389AfASfH4U0BIgB+C9sdcfwNsRuEbs9b9PALkAyAWwC4CbAMQCXDBjB9B3wKkEyAW4bvQA2Os/xQDcBNQB8hYAuQDICcBOYBcAtwCoBd74KOwaBusBcHj/ByAWYMUOOFCARQFQfgO+giAAuwByAZALIBcAtwDIBbALyAHYJvb6nxQANwG7RQ/wKAF2AeQCbBq9QC1grz+BewVgZwECUAN8LHp3A9xxJrDXH0AACXQWdAMQQAAJBBBAAgF4ASCBxoD7aiiAAOwAE0AAAQSwae3c94g0APcICIAAGgIBuAGaMRzAjgIBNAQCaATUAK2aCSCAAAJo4VwAwrsBLSBuENQAAQTQKaDvwQDaQCCANlCwzg5p+wT5c+G2jwiguTEBNEU2gFZKBBBAe0fUAW2h0xBo2XhDQDoGsA+Bdg7AXX0AAfxbALtAAHIAAkhALhCAXSCAAEwAuOv/8b4AiAeBuvgAfAAEEEAAAfQ1YO6ABOzXQgFMp8FaIIBuiXVjPICeD/aEOIEmygQQQCeBWiCAZowmEIBPwL5uoKUT0OKRWqAWaB1lS2kDaClt+wm0r1D/udXmYgG0wWIA7bHaTtv97dQmAB8Lgm6vx2TbI7uJwO0TzgtjO+LXBjjjiJ8G8O1NPl/mIkf9FIHv7zJXzaJD93oAs2rc1R8jMIvnl79Ol69/zAf/twL2+jcBGHv9Y6//WYExA8xmsdf/oMDsmOpXl/+AwIxaYLaOu/r/AIwq8vK/DG4SU9bNH1I51ydc+eG3AAAAAElFTkSuQmCC\", \"label\": \"plant\"}\n]\n```"
+  ]
+]

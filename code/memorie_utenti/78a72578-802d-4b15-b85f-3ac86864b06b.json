@@ -1,0 +1,18 @@
+[
+  [
+    "human",
+    "CIAO"
+  ],
+  [
+    "ai",
+    "Ciao"
+  ],
+  [
+    "human",
+    "COSA TROVI ?"
+  ],
+  [
+    "ai",
+    "La tua domanda è molto aperta e dipende dal contesto in cui mi trovo!\n\nPer poterti rispondere in modo utile, dovresti dirmi a cosa ti riferisci:\n\n1. **Se mi riferissi a una ricerca su Internet:** Troverei informazioni, pagine web, immagini, video, articoli scientifici, ecc., su qualsiasi argomento specifico tu mi chieda.\n2. **Se mi riferissi a un problema matematico o logico:** Troverei la soluzione, la dimostrazione o la risposta corretta.\n3. **Se fossi in un luogo fisico (ad esempio, una stanza, un bosco):** Troverei oggetti, piante, animali, persone, ecc.\n4. **Se mi riferissi a un sentimento o una sensazione (ad esempio, se cerco di capire una situazione):** Troverei insight, opinioni, connessioni logiche o la radice del problema.\n\n**Cosa stavi cercando esattamente quando hai fatto questa domanda?**"
+  ]
+]

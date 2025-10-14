@@ -9,7 +9,7 @@ import os, time
 from contextlib import asynccontextmanager
 
 from .logger_utils import setup_logger
-from .config import LOG_DIR, VECTORSTORE_DIR, UPLOAD_DIR, MAX_FILE_SIZE_BYTE, LOG_LEVEL
+from .config import LOG_DIR, VECTORSTORE_DIR, UPLOAD_DIR, MAX_FILE_SIZE_BYTE, LOG_LEVEL, LLM_MODEL_NAME, VLM_MODEL_NAME
 from .utils.session import nuova_sessione_id
 from .utils.hashing import hash_file
 from .rag.loader_doc import load_documents
@@ -62,8 +62,8 @@ grafi_cache = {}
 log_level = LOG_LEVEL
 logger = setup_logger(session="Inizializzazione", level=log_level)
 logger.info("🚀 Inizializzazione backend...")
-llm = get_llm_API(model_name="gemini-1.5-flash", logger=logger)
-vlm = get_vlm_API(model_name="gemini-1.5-flash", logger=logger)
+llm = get_llm_API(model_name=LLM_MODEL_NAME, logger=logger)
+vlm = get_vlm_API(model_name=VLM_MODEL_NAME, logger=logger)
 grafo_default = build_graph(llm=llm, vision_model=vlm, logger=logger)
 grafi_cache["default"] = {"grafo": grafo_default, "rag_chain": None, "image_paths": []}
 
@@ -226,10 +226,10 @@ async def upload_file(file: UploadFile = File(...), session_id: Optional[str] = 
             raise HTTPException(status_code=400, detail=f"⚠️ Nessun contenuto valido in {filename}")
 
         if session_id in grafi_cache and "vectorstore" in grafi_cache[session_id]:
-            vectorstore = get_vectorstore_multidoc(docs, vectorstore_path, logger, FILE_DIR, grafi_cache[session_id]["vectorstore"])
+            vectorstore = get_vectorstore_multidoc(docs, vectorstore_path, logger, grafi_cache[session_id]["vectorstore"])
             logger.info("🔁 Vectorstore aggiornato.")
         else:
-            vectorstore = get_vectorstore_multidoc(docs, vectorstore_path, logger, FILE_DIR)
+            vectorstore = get_vectorstore_multidoc(docs, vectorstore_path, logger)
             logger.info("🆕 Vectorstore creato.")
 
         rag_chain = build_rag_chain(llm, vectorstore)

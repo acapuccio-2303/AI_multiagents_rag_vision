@@ -1,0 +1,10 @@
+[
+  [
+    "human",
+    "cosa dice?"
+  ],
+  [
+    "ai",
+    "Per poterti dire cosa dice, avrei bisogno di sapere a cosa ti riferisci!\n\nAd esempio:\n*   Hai un **testo** che dovrei leggere?\n*   C'è un'**immagine** con del testo che vuoi che analizzi?\n*   Ti riferisci a qualcosa che è stato detto in precedenza nella nostra **conversazione**?\n*   Stai parlando di una **persona specifica** e di quello che ha detto?"
+  ]
+]
