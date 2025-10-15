@@ -17,4 +17,3 @@ uvicorn==0.35.0
 google-generativeai
 boto3==1.40.24
 pypdf==4.2.0
-faiss-cpu==1.11.0

@@ -7,7 +7,7 @@ Features:
 
 - Structured logging for easy monitoring
 
-- Seamless handling of both documents and images
+- Easily process and manage both documents and images together
 
 Your all-in-one solution for intelligent, multimodal interactions.
 
